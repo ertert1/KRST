@@ -19,7 +19,7 @@ class sumsTest {
 	@Test
 	void sums_r1() {
 		float k1=330;
-		 assertEquals(1.8f, sums.sums_rl(k1));
+		 assertEquals(1.8000002f, sums.sums_rl(k1));
 	   /**
 		* Окончание теста расчёта номинала в электрической цепи для жилых помещений.
 		*/
