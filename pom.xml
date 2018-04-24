@@ -54,7 +54,6 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>kk.f1</mainClass>
-                           <mainClass>kk.l1</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
