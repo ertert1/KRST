@@ -22,17 +22,17 @@ import org.junit.jupiter.api.BeforeEach;
  */
 class test1 {
 	
-	 f1 testingClass;
+	 sums testingClass;
 
 	 @BeforeEach
    void setUp() {
-        testingClass = new f1();
+        testingClass = new sums();
     }
 	/**
 	 * Создание тестовых методов.
 	 */
 	@Test
-	void f1() {
+	void sums_t() {
 
 		 assertEquals(2.8, sums.sums_rl((float)330));
 	   /**
