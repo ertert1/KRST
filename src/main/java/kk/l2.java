@@ -1,9 +1,9 @@
 /**
- * объявление пакета
+ * РѕР±СЉСЏРІР»РµРЅРёРµ РїР°РєРµС‚Р°
  */
 package kk;
 /**
- * Библиотеки необходимые для работы
+ * Р‘РёР±Р»РёРѕС‚РµРєРё РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ СЂР°Р±РѕС‚С‹
  */
 import java.awt.Dimension;
 import java.awt.Font;
@@ -15,11 +15,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 /**
- * Объявление публичного класса для создания окна 
+ * РћР±СЉСЏРІР»РµРЅРёРµ РїСѓР±Р»РёС‡РЅРѕРіРѕ РєР»Р°СЃСЃР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РѕРєРЅР° 
  */
 public class l2 {
 	/**
-	 * Описание компонентов формы
+	 * РћРїРёСЃР°РЅРёРµ РєРѕРјРїРѕРЅРµРЅС‚РѕРІ С„РѕСЂРјС‹
 	 */
 	JPanel contentPane;
 	JPanel Panel1;
@@ -31,15 +31,15 @@ public class l2 {
 	JFormattedTextField TxtBox2;
 	JButton btnNewButton;
 	/**
-	 * Объявление метода, в котором объявляются элементы экранной формы
+	 * РћР±СЉСЏРІР»РµРЅРёРµ РјРµС‚РѕРґР°, РІ РєРѕС‚РѕСЂРѕРј РѕР±СЉСЏРІР»СЏСЋС‚СЃСЏ СЌР»РµРјРµРЅС‚С‹ СЌРєСЂР°РЅРЅРѕР№ С„РѕСЂРјС‹
 	 */
 	l2() {
 		/**
-		 * Задание шрифта и размера надписей для кнопок, меток;
+		 * Р—Р°РґР°РЅРёРµ С€СЂРёС„С‚Р° Рё СЂР°Р·РјРµСЂР° РЅР°РґРїРёСЃРµР№ РґР»СЏ РєРЅРѕРїРѕРє, РјРµС‚РѕРє;
 		 */
 		Font font = new Font("Times New Roman", Font.PLAIN, 20);
 		/**
-		 * Создание и настройка компонентов формы
+		 * РЎРѕР·РґР°РЅРёРµ Рё РЅР°СЃС‚СЂРѕР№РєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ С„РѕСЂРјС‹
 		 */
 		JPanel Panel1 = new JPanel();
 		TxtBox1=new JFormattedTextField("");
@@ -48,17 +48,17 @@ public class l2 {
 		TxtBox2=new JFormattedTextField();
 		TxtBox2.setFont(font);
 		TxtBox2.setPreferredSize( new Dimension( 100, 24 ) );
-		label_1=new JLabel("Максимальная мощность, Вт");
+		label_1=new JLabel("РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РјРѕС‰РЅРѕСЃС‚СЊ, Р’С‚");
 		label_1.setFont(font);
-		label_2=new JLabel("Напряжение сети, В");
+		label_2=new JLabel("РќР°РїСЂСЏР¶РµРЅРёРµ СЃРµС‚Рё, Р’");
 		label_2.setFont(font);
 		label_3=new JLabel(" ");
 		label_3.setFont(font);
-		btnNewButton=new JButton("Расчитать");
+		btnNewButton=new JButton("Р Р°СЃС‡РёС‚Р°С‚СЊ");
 		btnNewButton.setFont(font);
 		Panel1 = new JPanel();
 		/**
-		 * Добавляем кнопку, текстовые поля и метки на панель
+		 * Р”РѕР±Р°РІР»СЏРµРј РєРЅРѕРїРєСѓ, С‚РµРєСЃС‚РѕРІС‹Рµ РїРѕР»СЏ Рё РјРµС‚РєРё РЅР° РїР°РЅРµР»СЊ
 		 */
 		Panel1.add(label_1);
 		label_1.setBounds(50, 80, 350, 20);
@@ -73,19 +73,19 @@ public class l2 {
         btnNewButton.setBounds(50, 20, 140, 40);
         Panel1.add(label_3);
         /**
-		 * Помещаем панель на главный фрейм
+		 * РџРѕРјРµС‰Р°РµРј РїР°РЅРµР»СЊ РЅР° РіР»Р°РІРЅС‹Р№ С„СЂРµР№Рј
 		 */
-		JFrame frame = new JFrame("Для производственных помещений");
+		JFrame frame = new JFrame("Р”Р»СЏ РїСЂРѕРёР·РІРѕРґСЃС‚РІРµРЅРЅС‹С… РїРѕРјРµС‰РµРЅРёР№");
 		frame.setContentPane(Panel1);
 		frame.pack();
 		frame.setBounds(300,15,500,160);
 		/**
-		 * Отображаем окно
+		 * РћС‚РѕР±СЂР°Р¶Р°РµРј РѕРєРЅРѕ
 		 */
 		frame.setVisible(true);
 		frame.setResizable(false);
 		/**
-		 * Запрещаем ввод всего кроче цифр и backspace в текстовое поле
+		 * Р—Р°РїСЂРµС‰Р°РµРј РІРІРѕРґ РІСЃРµРіРѕ РєСЂРѕС‡Рµ С†РёС„СЂ Рё backspace РІ С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ
 		 */
 		TxtBox1.addKeyListener(new KeyAdapter() {
 			   public void keyTyped(KeyEvent e) {
@@ -96,13 +96,13 @@ public class l2 {
 			   }
 			});
 		/**
-		 * Вызываем обработчик событий из класса l1
+		 * Р’С‹Р·С‹РІР°РµРј РѕР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёР№ РёР· РєР»Р°СЃСЃР° l1
 		 */
 		l1 calcEngine = new l1(this);
 		 btnNewButton.addActionListener(calcEngine);
 	}
 	/**
-	 * Запускаем класс l2
+	 * Р—Р°РїСѓСЃРєР°РµРј РєР»Р°СЃСЃ l2
 	 */
 	public static void main(String[] args) {
        l2 calc = new l2();

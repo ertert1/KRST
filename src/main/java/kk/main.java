@@ -1,9 +1,9 @@
 /**
- * объявление пакета
+ * РѕР±СЉВ¤РІР»РµРЅРёРµ РїР°РєРµС‚Р°
  */
 package kk;
 /**
- * Импорт библиотек классов, необходимых для работы.
+ * В»РјРїРѕСЂС‚ Р±РёР±Р»РёРѕС‚РµРє РєР»Р°СЃСЃРѕРІ, РЅРµРѕР±С…РѕРґРёРјС‹С… РґР»В¤ СЂР°Р±РѕС‚С‹.
  */
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -17,11 +17,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
  * 
- * Объявление публичного класса, наследующего члены класса JFrame 
+ * СњР±СЉВ¤РІР»РµРЅРёРµ РїСѓР±Р»РёС‡РЅРѕРіРѕ РєР»Р°СЃСЃР°, РЅР°СЃР»РµРґСѓСЋС‰РµРіРѕ С‡Р»РµРЅС‹ РєР»Р°СЃСЃР° JFrame 
  */
 public class main extends JFrame {
 	/**
-	 * Метод, отвечающий за запуск фрейма
+	 * С›РµС‚РѕРґ, РѕС‚РІРµС‡Р°СЋС‰РёР№ Р·Р° Р·Р°РїСѓСЃРє С„СЂРµР№РјР°
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -31,7 +31,7 @@ public class main extends JFrame {
 					frame.setVisible(true);
 				} catch (Exception e) {
 					/**
-					 * Вывод сообщений в случае ошибки для дальнейшей отладки
+					 * В¬С‹РІРѕРґ СЃРѕРѕР±С‰РµРЅРёР№ РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РєРё РґР»В¤ РґР°Р»СЊРЅРµР№С€РµР№ РѕС‚Р»Р°РґРєРё
 					 */
 					e.printStackTrace();
 				}
@@ -39,13 +39,13 @@ public class main extends JFrame {
 		});
 	}
 	/**
-	 * Объявление метода, в котором объявляются элементы экранной формы, ее события
+	 * СњР±СЉВ¤РІР»РµРЅРёРµ РјРµС‚РѕРґР°, РІ РєРѕС‚РѕСЂРѕРј РѕР±СЉВ¤РІР»В¤СЋС‚СЃВ¤ СЌР»РµРјРµРЅС‚С‹ СЌРєСЂР°РЅРЅРѕР№ С„РѕСЂРјС‹, РµРµ СЃРѕР±С‹С‚РёВ¤
 	 */
 	public main() {
 		/**
-		 * Создание главной панели
+		 * вЂ”РѕР·РґР°РЅРёРµ РіР»Р°РІРЅРѕР№ РїР°РЅРµР»Рё
 		 */
-		TitledBorder titledBorder = BorderFactory.createTitledBorder(null, "Выберите необходимый вам калькулятор", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font("times new roman",Font.PLAIN,15), Color.black);
+		TitledBorder titledBorder = BorderFactory.createTitledBorder(null, "В¬С‹Р±РµСЂРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Р№ РІР°Рј РєР°Р»СЊРєСѓР»В¤С‚РѕСЂ", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font("times new roman",Font.PLAIN,15), Color.black);
 		JPanel contentPane = new JPanel();
 		contentPane.setLayout(null);
 		contentPane.setBorder(titledBorder);
@@ -55,14 +55,14 @@ public class main extends JFrame {
 		Panel2.setLayout(null);
 		Panel2.setBounds(5,15,650,650);
 		/**
-		 * Задание шрифта и размера надписей для кнопок
+		 * В«Р°РґР°РЅРёРµ С€СЂРёС„С‚Р° Рё СЂР°Р·РјРµСЂР° РЅР°РґРїРёСЃРµР№ РґР»В¤ РєРЅРѕРїРѕРє
 		 */
 		Font font = new Font("Times New Roman", Font.PLAIN, 25);
 		/**
-		 * Создание кнопки
+		 * вЂ”РѕР·РґР°РЅРёРµ РєРЅРѕРїРєРё
 		 */
-		JButton btnNewButton1 = new JButton("Для жилых помещений");
-		JButton btnNewButton2 = new JButton("Для производственных помещений");
+		JButton btnNewButton1 = new JButton("Ж’Р»В¤ Р¶РёР»С‹С… РїРѕРјРµС‰РµРЅРёР№");
+		JButton btnNewButton2 = new JButton("Ж’Р»В¤ РїСЂРѕРёР·РІРѕРґСЃС‚РІРµРЅРЅС‹С… РїРѕРјРµС‰РµРЅРёР№");
 		btnNewButton1.setFont(font);
 		btnNewButton1.setBounds(1, 10, 620, 100);
 		btnNewButton1.setFocusable(isDisplayable());
@@ -70,39 +70,39 @@ public class main extends JFrame {
 		btnNewButton2.setBounds(1,110, 620, 100);
 		btnNewButton2.setFocusable(isDisplayable());
 		/**
-		 * Добавление элементов на панель для кнопки
+		 * Ж’РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РЅР° РїР°РЅРµР»СЊ РґР»В¤ РєРЅРѕРїРєРё
 		 */
 		Panel2.add(btnNewButton1);
 		Panel2.add(btnNewButton2);
 		/**
-		 * Добавление элементов на главную панель
+		 * Ж’РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РЅР° РіР»Р°РІРЅСѓСЋ РїР°РЅРµР»СЊ
 		 */
 		contentPane.add(Panel2);
 		contentPane.add(Panel1);
 		/**
-		 * Указание размера, расположения, названия экранной формы, добавление на нее главной панели
+		 * вЂќРєР°Р·Р°РЅРёРµ СЂР°Р·РјРµСЂР°, СЂР°СЃРїРѕР»РѕР¶РµРЅРёВ¤, РЅР°Р·РІР°РЅРёВ¤ СЌРєСЂР°РЅРЅРѕР№ С„РѕСЂРјС‹, РґРѕР±Р°РІР»РµРЅРёРµ РЅР° РЅРµРµ РіР»Р°РІРЅРѕР№ РїР°РЅРµР»Рё
 		 */
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
-		setTitle("Расчет номинала предохранителей в электрической цепи");
+		setTitle("вЂ“Р°СЃС‡РµС‚ РЅРѕРјРёРЅР°Р»Р° РїСЂРµРґРѕС…СЂР°РЅРёС‚РµР»РµР№ РІ СЌР»РµРєС‚СЂРёС‡РµСЃРєРѕР№ С†РµРїРё");
 		setContentPane(contentPane);
 		setBounds(100, 100, 650, 280);	
 		/**
-		 * Событие для кнопки "Для жилых помещений". 
+		 * вЂ”РѕР±С‹С‚РёРµ РґР»В¤ РєРЅРѕРїРєРё "Ж’Р»В¤ Р¶РёР»С‹С… РїРѕРјРµС‰РµРЅРёР№". 
 		 */
 		btnNewButton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (e.getActionCommand().equals("Для жилых помещений")) {
+				if (e.getActionCommand().equals("Ж’Р»В¤ Р¶РёР»С‹С… РїРѕРјРµС‰РµРЅРёР№")) {
 					f2 calc = new f2();
 				    }
 			}
 		});
 		/**
-		 * Событие для кнопки "Для производственных помещений". 
+		 * вЂ”РѕР±С‹С‚РёРµ РґР»В¤ РєРЅРѕРїРєРё "Ж’Р»В¤ РїСЂРѕРёР·РІРѕРґСЃС‚РІРµРЅРЅС‹С… РїРѕРјРµС‰РµРЅРёР№". 
 		 */
 		btnNewButton2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (e.getActionCommand().equals("Для производственных помещений")) {
+				if (e.getActionCommand().equals("Ж’Р»В¤ РїСЂРѕРёР·РІРѕРґСЃС‚РІРµРЅРЅС‹С… РїРѕРјРµС‰РµРЅРёР№")) {
 					l2 calc = new l2();
 				    }
 			}
