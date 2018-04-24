@@ -33,8 +33,8 @@ class test1 {
 	 */
 	@Test
 	void sums() {
-
-		 assertEquals(1.8, sums.sums_rl(330));
+		float k1=330;
+		 assertEquals(1.8, sums.sums_rl(k1));
 	   /**
 		* Окончание теста расчёта номинала в электрической цепи для жилых помещений.
 		*/
