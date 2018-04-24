@@ -1,25 +1,10 @@
-/**
- * Объявление пакета, в котором находится класс.
- */
+
 package kk;
-/**
- * Добавление библиотеки для тестирования.
- */
-import static org.junit.jupiter.api.Assertions.*;
-/**
- * Добавление библиотеки для тестирования.
- */
-import org.junit.jupiter.api.Test;
-/**
- * Добавление библиотек пря проверки результата теста.
- */
+
 import org.junit.jupiter.api.BeforeEach;
-/**
- * Добавление классов выполнения расчёта напряжения для жилых помещений.
- */
-/**
- * Создание класса для тестирования номинала напряжения в электрической цепи.
- */
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 class test1 {
 	
 	 sums testingClass;
@@ -32,7 +17,7 @@ class test1 {
 	 * Создание тестовых методов.
 	 */
 	@Test
-	void sums() {
+	void sums_r1() {
 		float k1=330;
 		 assertEquals(1.8, sums.sums_rl(k1));
 	   /**
