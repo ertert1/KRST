@@ -34,7 +34,7 @@ public class l1 implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
         if (src == parent.btnNewButton){
-        	k1=Float.parseFloat((String) parent.TxtBox1.getValue());
+        	Float k1=Float.parseFloat((parent.TxtBox1.getText( )));
 			parent.label_3.setText(" –езультат: "+ String.format("%.2f",result= sums.sums_rl1(k1)+ " јмпер "));
         }  
 	}
