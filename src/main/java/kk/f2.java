@@ -27,7 +27,7 @@ public class f2 {
 	JLabel label_1;
 	JLabel label_2;
 	JLabel label_3;
-	JFormattedTextField TxtBox1;
+	JTextField TxtBox1;
 	JFormattedTextField TxtBox2;
 	JButton btnNewButton;
 	/**
