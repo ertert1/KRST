@@ -53,7 +53,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>main1.registration</mainClass>
+                            <mainClass>kk.main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
