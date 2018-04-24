@@ -1,7 +1,7 @@
 /**
  * Объявление пакета, в котором находится класс.
  */
-package tests;
+package test;
 /**
  * Добавление библиотеки для тестирования.
  */
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Добавление библиотек пря проверки результата теста.
  */
-import junit.framework.Assert;
+import org.junit.jupiter.api.BeforeEach;
 /**
  * Добавление классов выполнения расчёта напряжения для жилых помещений.
  */
@@ -21,7 +21,14 @@ import kk.f1;
 /**
  * Создание класса для тестирования номинала напряжения в электрической цепи.
  */
-public class test1 {
+class test1 {
+	
+	 f1 testingClass;
+
+	 @BeforeEach
+   void setUp() {
+        testingClass = new Calculation();
+    }
 	/**
 	 * Создание тестовых методов.
 	 */
@@ -36,15 +43,14 @@ public class test1 {
 		  /**
 		   * result1-значение из функции sums,расположеной в классе f1.
 		   */
-			float result1=f1.sums(k1,r1);
 			/**
 			 * tests -выходное значение.
 			 */
-			float tests= (float) 2.8;
 			/**
 			   * итоговая проверка, tests и result1 сравниваниются на равенство.
 			   */
 	    Assert.assertEquals(tests, result1);
+		 assertEquals(2.8, kk.f1(k1,r1));
 	   /**
 		* Окончание теста расчёта номинала в электрической цепи для жилых помещений.
 		*/
