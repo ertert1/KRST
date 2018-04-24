@@ -11,6 +11,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
+import javax.swing.JTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -42,7 +43,7 @@ public class f2 {
 		 * Создание и настройка компонентов формы
 		 */
 		JPanel Panel1 = new JPanel();
-		TxtBox1=new JFormattedTextField("");
+		TxtBox1=new JTextField("");
 		TxtBox1.setFont(font);
 		TxtBox1.setPreferredSize( new Dimension( 100, 24 ) );
 		TxtBox2=new JFormattedTextField();
