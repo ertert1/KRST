@@ -21,6 +21,7 @@ public class f1 implements ActionListener {
 	 *r1-Результат вычислений
 	 */
 	float k1;
+	float result;
 	float r1;
 	/**
 	 * Установление связи между родительским и дочерним классом
@@ -35,18 +36,7 @@ public class f1 implements ActionListener {
         Object src = e.getSource();
         if (src == parent.btnNewButton){
         	k1=Float.parseFloat((String) parent.TxtBox1.getValue());
-			r1= (float) ((k1*1.2)/220);
-			parent.label_3.setText(" Результат: "+ String.format("%.2f",r1 )+ " Ампер ");
-			System.out.println(r1);
+			parent.label_3.setText(" Результат: "+ String.format("%.2f",result= sums.sums_rl(kl)+ " Ампер ");
         } 
 	}
-	
-	
-	public static float sums(float k1,float r1)
-	{
-	float sum;
-	float s;
-	return sum = (float) ((k1*1.2)/220);
-	}
-
 }

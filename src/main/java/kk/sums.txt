@@ -1,0 +1,13 @@
+package kk;
+
+public class sums {
+	public static float sums_rl(float k1){
+	float sum;
+	return sum = (float) ((k1*1.2)/220);
+	}
+	public static float sums_rl1(float k1)
+	{
+	float sum;
+	return sum = (float) ((k1*1.2)/380);
+	}
+}
