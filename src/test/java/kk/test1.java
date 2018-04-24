@@ -32,9 +32,9 @@ class test1 {
 	 * Создание тестовых методов.
 	 */
 	@Test
-	void sums_t() {
+	void sums() {
 
-		 assertEquals(2.8, sums.sums_rl((float)330));
+		 assertEquals(1.8, sums.sums_rl(330));
 	   /**
 		* Окончание теста расчёта номинала в электрической цепи для жилых помещений.
 		*/
