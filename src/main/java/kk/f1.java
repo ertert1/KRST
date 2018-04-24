@@ -33,8 +33,8 @@ public class f1 implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
         if (src == parent.btnNewButton){
-        Float k1=Float.parseFloat((parent.TxtBox1.getText( )));
-			parent.label_3.setText(" –езультат: " + (result= sums.sums_rl1(k1))+ " јмпер ");
+			Float k1=Float.parseFloat((parent.TxtBox1.getText( )));
+			parent.label_3.setText(" –езультат: " + (result= sums.sums_rl(k1))+ " јмпер ");
         } 
 	}
 }
